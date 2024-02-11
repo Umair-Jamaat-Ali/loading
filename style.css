@@ -15,7 +15,7 @@
     position: absolute;
 }
 
-#box1, #box2, #box3
+.box
 {
     border: 2px solid rgb(51, 47, 47);
     border-radius: 50%;
@@ -25,6 +25,54 @@
     
 }
 
-#box1{
+.box:nth-child(1){
+    border-bottom-width: 8px;
+    border-bottom-color: aqua;
+    animation: loading1 2s linear infinite;
+}
 
+.box:nth-child(2){
+    border-bottom-width: 10px;
+    border-bottom-color: rgb(234, 0, 255);
+    animation: loading2 2s linear infinite;
+}
+
+.box:nth-child(3){
+    border-bottom-width: 8px;
+    border-bottom-color: rgb(236, 80, 7);
+    animation: loading3 2s linear infinite;
+}
+
+@keyframes loading1 {
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(45deg) rotateZ(360deg);
+
+    }
+}
+
+@keyframes loading2 {
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+
+    }
+}
+
+@keyframes loading3 {
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+
+    }
+}
+
+.text{
+    color: white;
 }
