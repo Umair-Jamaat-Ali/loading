@@ -17,7 +17,7 @@
 
 .box
 {
-    border: 2px solid rgb(51, 47, 47);
+    border: 1px solid rgb(51, 47, 47);
     border-radius: 50%;
     width: 150px;
     height: 150px;
@@ -26,21 +26,21 @@
 }
 
 .box:nth-child(1){
-    border-bottom-width: 8px;
-    border-bottom-color: aqua;
-    animation: loading1 2s linear infinite;
+    border-bottom-width: 10px;
+    border-color: aqua;
+    animation: loading1 3s linear infinite;
 }
 
 .box:nth-child(2){
     border-bottom-width: 10px;
-    border-bottom-color: rgb(234, 0, 255);
-    animation: loading2 2s linear infinite;
+    border-color: rgb(234, 0, 255);
+    animation: loading2 3s linear infinite;
 }
 
 .box:nth-child(3){
-    border-bottom-width: 8px;
-    border-bottom-color: rgb(236, 80, 7);
-    animation: loading3 2s linear infinite;
+    border-bottom-width: 10px;
+    border-color: rgb(236, 80, 7);
+    animation: loading3 3s linear infinite;
 }
 
 @keyframes loading1 {
@@ -75,4 +75,12 @@
 
 .text{
     color: white;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    background-color: black;
 }
